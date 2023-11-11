@@ -2,8 +2,8 @@
 
 :root {
   --main-color: #FFA3F6;
-  --white-color: #FFF;
-  --dark-color: #000;
+  --light-color: #fafafa;
+  --dark-color: #161616;
 }
 
 html {
