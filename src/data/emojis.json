@@ -58,5 +58,85 @@
             "en": "In progress (not finished)"
         },
         "keywords": ["kill yourself", "not finished", "pas fini", "fini", "en cours", "in progress", "construction", "pas envie"]
+    },
+    {
+        "name": ":zap:",
+        "emoji": "⚡️",
+        "color": "#FEFFC9",
+        "descriptions": {
+            "fr": "Amélioration des performances",
+            "en": "Improve performance"
+        },
+        "keywords": ["performances", "improve", "optimisation"]
+    },
+    {
+        "name": ":recycle:",
+        "emoji": "♻️",
+        "color": "#C9FFDB",
+        "descriptions": {
+            "fr": "Refactorisation du code",
+            "en": "Refactoring of the code"
+        },
+        "keywords": ["code", "clean", "chore", "refactoring"]
+    },
+    {
+        "name": ":beers:",
+        "emoji": "🍻",
+        "color": "#C9FFDB",
+        "descriptions": {
+            "fr": "Code à chier et je le sais.",
+            "en": "Bad code and I know it."
+        },
+        "keywords": ["bad", "code", "drunk", "bourré", "mauvais", "trash", "chier"]
+    },
+    {
+        "name": ":truck:",
+        "emoji": "🚚",
+        "color": "#C9FFDB",
+        "descriptions": {
+            "fr": "Changement dans la hiérachie (Déplacer, changer le nom, etc...)",
+            "en": "Change in hierarchy (Move, change name, etc...)"
+        },
+        "keywords": ["move", "change", "name", "hierachy", "files", "folder"]
+    },
+    {
+        "name": ":rocket:",
+        "emoji": "🚀",
+        "color": "#C9FFDB",
+        "descriptions": {
+            "fr": "Déploiement vers la branche main",
+            "en": "Deploy to main branch"
+        },
+        "keywords": ["main", "branch", "deploy", "release", "versions"]
+    },
+    {
+        "name": ":wrench:",
+        "emoji": "🔧",
+        "color": "#C9FFDB",
+        "descriptions": {
+            "fr": "Mise à jour des fichiers de configuration",
+            "en": "Updating configuration files"
+        },
+        "keywords": ["update", "configuration", "files", "package", "manifest"]
+    },
+    {
+        "name": ":wrench:",
+        "emoji": "🔧",
+        "color": "#C9FFDB",
+        "descriptions": {
+            "fr": "Mise à jour des fichiers de configuration",
+            "en": "Updating configuration files"
+        },
+        "keywords": ["update", "configuration", "files", "package", "manifest"]
+    },
+    {
+        "name": ":card_box:",
+        "emoji": "🗃️",
+        "color": "#C9FFDB",
+        "descriptions": {
+            "fr": "Mise à jour de la base de données",
+            "en": "Update Database"
+        },
+        "keywords": ["save", "database", "db", "update", "json"]
     }
 ]
