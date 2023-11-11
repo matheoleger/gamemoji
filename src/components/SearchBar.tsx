@@ -1,17 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { ReactComponent as SearchIcon } from "../static/svg/search-icon.svg";
 import "../static/css/SearchBar.css";
 
-export const SearchBar = () => {
+type Props = {
+  filter: Function;
+}
+
+export const SearchBar = (props: Props) => {
+
   const keyDownHandler = (event: KeyboardEvent) => {
     if (event.ctrlKey && event.key === "k") {
       event.preventDefault();
       const searchbarInput = document.getElementById("input-searchbar");
       searchbarInput?.focus();
-      // document
-      //   .getElementsByClassName("searchbar")
-      //   .item(0)
-      //   ?.classList.add("searchbar-focus");
     }
   };
 
@@ -27,6 +28,10 @@ export const SearchBar = () => {
     searchbar?.classList.remove("searchbar-focus");
   };
 
+  const onChangeSearchbarHandler = (event: any) => {
+    props.filter(event.currentTarget.value)
+  }
+
   useEffect(() => {
     window.addEventListener("keydown", keyDownHandler);
   });
@@ -41,6 +46,7 @@ export const SearchBar = () => {
           placeholder="Search an emoji..."
           onFocus={focusHandler}
           onBlur={focusOutHandler}
+          onChange={onChangeSearchbarHandler}
         ></input>
       </div>
       <kbd>Ctrl + K</kbd>
