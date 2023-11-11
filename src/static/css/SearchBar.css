@@ -1,0 +1,49 @@
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.42);
+    /* padding: 1.5em; */
+    padding: 0 1.5em;
+    border-radius: 10px;
+    width: 800px;
+    border: none;
+}
+
+.searchbar-left-element {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar input {
+    margin: 0 10px;
+    font-family: "Poppins";
+    border-radius: 10px;
+    width: 600px;
+    padding: 2em;
+    border: none;
+}
+.searchbar input:focus {
+    outline: none;
+}
+
+.searchbar-focus {
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.42);
+}
+
+kbd {
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 1em;
+    white-space: nowrap;
+}
