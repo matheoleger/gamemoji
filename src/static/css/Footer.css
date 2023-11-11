@@ -1,0 +1,26 @@
+footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.footer-content {
+    display: flex;
+    margin: 1em 0;
+    align-items: center;
+}
+
+footer h5 {
+    font-weight: 400;
+    font-size: medium;
+    margin: 0 0.3em;
+}
+
+footer a  {
+    text-decoration: none;
+    color: var(--main-color);
+}
