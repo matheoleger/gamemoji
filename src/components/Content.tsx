@@ -5,7 +5,7 @@ import { EmojiCard } from "./EmojiCard";
 import "../static/css/Content.css";
 
 type Props = {
-  filterString: string;
+  filter: string;
 };
 
 export const Content = (props: Props) => {
@@ -14,13 +14,13 @@ export const Content = (props: Props) => {
       {emojis.map((emoji) => {
         const keywordsInline = emoji.keywords.join(";");
 
-        const filter = props.filterString.toLowerCase()
+        const filter = props.filter.toLowerCase()
 
         if (keywordsInline.toLowerCase().includes(filter) 
         || emoji.descriptions.fr.toLowerCase().includes(filter) 
         || emoji.descriptions.en.toLowerCase().includes(filter) 
         || emoji.name.toLowerCase().includes(filter) 
-        || !props.filterString)
+        || !props.filter)
           return <EmojiCard {...emoji} key={emoji.name} />;
       })}
     </section>

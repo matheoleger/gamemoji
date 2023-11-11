@@ -7,14 +7,14 @@ import { SearchBar } from "./components/SearchBar"
 
 function App() {
 
-  const [filterString, setFilterString] = useState("");
+  const [filter, setFilter] = useState("");
 
   return (
     <div className="App">
       <Header/>
       <main>
-        <SearchBar filter={setFilterString}/>
-        <Content filterString={filterString}/>
+        <SearchBar onFilter={setFilter}/>
+        <Content filter={filter}/>
       </main>
     </div>
   );

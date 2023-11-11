@@ -3,7 +3,7 @@ import { ReactComponent as SearchIcon } from "../static/svg/search-icon.svg";
 import "../static/css/SearchBar.css";
 
 type Props = {
-  filter: Function;
+  onFilter: Function;
 }
 
 export const SearchBar = (props: Props) => {
@@ -29,7 +29,7 @@ export const SearchBar = (props: Props) => {
   };
 
   const onChangeSearchbarHandler = (event: any) => {
-    props.filter(event.currentTarget.value)
+    props.onFilter(event.currentTarget.value)
   }
 
   useEffect(() => {
