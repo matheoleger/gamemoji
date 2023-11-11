@@ -62,7 +62,7 @@
     {
         "name": ":zap:",
         "emoji": "⚡️",
-        "color": "#FEFFC9",
+        "color": "#FFE6C9",
         "descriptions": {
             "fr": "Amélioration des performances",
             "en": "Improve performance"
@@ -82,7 +82,7 @@
     {
         "name": ":beers:",
         "emoji": "🍻",
-        "color": "#C9FFDB",
+        "color": "#FFE6C9",
         "descriptions": {
             "fr": "Code à chier et je le sais.",
             "en": "Bad code and I know it."
@@ -92,7 +92,7 @@
     {
         "name": ":truck:",
         "emoji": "🚚",
-        "color": "#C9FFDB",
+        "color": "#FFC9C9",
         "descriptions": {
             "fr": "Changement dans la hiérachie (Déplacer, changer le nom, etc...)",
             "en": "Change in hierarchy (Move, change name, etc...)"
@@ -102,7 +102,7 @@
     {
         "name": ":rocket:",
         "emoji": "🚀",
-        "color": "#C9FFDB",
+        "color": "#C9EFFF",
         "descriptions": {
             "fr": "Déploiement vers la branche main",
             "en": "Deploy to main branch"
@@ -112,17 +112,7 @@
     {
         "name": ":wrench:",
         "emoji": "🔧",
-        "color": "#C9FFDB",
-        "descriptions": {
-            "fr": "Mise à jour des fichiers de configuration",
-            "en": "Updating configuration files"
-        },
-        "keywords": ["update", "configuration", "files", "package", "manifest"]
-    },
-    {
-        "name": ":wrench:",
-        "emoji": "🔧",
-        "color": "#C9FFDB",
+        "color": "#EEC9FF",
         "descriptions": {
             "fr": "Mise à jour des fichiers de configuration",
             "en": "Updating configuration files"

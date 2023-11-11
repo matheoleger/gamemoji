@@ -8,7 +8,8 @@ article {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    border-radius: 10px
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 article:hover {
@@ -16,6 +17,8 @@ article:hover {
 }
 
 h4 {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin: 0;
     width: 100%;
@@ -26,18 +29,63 @@ h4 {
 
 }
 
+@-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    30% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    }
+    30% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    }
+}
+
+h4 > span {
+    width: fit-content;
+    display: block;
+    transition: all .5s ease-in-out;
+}
+
+h4 > span:hover {
+    font-size: 1.05em;
+    -webkit-animation: rotate 1s ease-in-out both;
+    animation: rotate 1s ease-in-out both;
+}
+
 code {
     width: 200px;
     margin-top: 1.3em;
+    padding-bottom: 0.2em;
     text-align: center;
     font-size: 1.25em;
-    /* background-color: #ececec;
-    border: 1px solid #aaa; */
-    /* border-radius: 4px; */
     overflow:hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-weight: bold;
+}
+
+article:hover > code {
+    text-decoration: underline;
+    text-decoration-color: var(--emojiColor);
+    text-decoration-thickness: 0.3rem;
 }
 
 p {

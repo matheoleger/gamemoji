@@ -9,7 +9,7 @@ export const Content = () => {
         <section>
             {
                 emojis.map((emoji) => (
-                    <EmojiCard {...emoji}/>
+                    <EmojiCard {...emoji} key={emoji.name}/>
                 ))
             }
         </section>
