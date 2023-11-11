@@ -2,6 +2,7 @@
     {
         "name": ":sparkles:",
         "emoji": "✨️",
+        "color": "#FFC9C9",
         "descriptions": {
             "fr": "Introduire une nouvelle fonctionnalité",
             "en": "Introduce new feature"
@@ -11,6 +12,7 @@
     {
         "name": ":bug:",
         "emoji": "🐛",
+        "color": "#FEFFC9",
         "descriptions": {
             "fr": "Régler un bug",
             "en": "Fix a bug"
@@ -20,6 +22,7 @@
     {
         "name": ":twisted_rightwards_arrows:",
         "emoji": "🔀",
+        "color": "#C9FFDB",
         "descriptions": {
             "fr": "Faire un merge entre 2 branches",
             "en": "Merge 2 branches"
@@ -29,6 +32,7 @@
     {
         "name": ":hammer:",
         "emoji": "🔨",
+        "color": "#C9EFFF",
         "descriptions": {
             "fr": "Mettre à jour un script",
             "en": "Update scripts"
@@ -38,19 +42,91 @@
     {
         "name": ":lipstick:",
         "emoji": "💄",
+        "color": "#D0C9FF",
         "descriptions": {
             "fr": "Mettre à jour l'UI, les modèles ou les animations",
-            "en": "Update UI/Models/Animations"
+            "en": "Update UI, models or animations"
         },
         "keywords": ["hammer", "mettre à jour", "update", "models", "animations", "ui", "ux", "style"]
     },
     {
         "name": ":construction:",
         "emoji": "🚧",
+        "color": "#EEC9FF",
         "descriptions": {
             "fr": "Encore en cours (pas fini)",
             "en": "In progress (not finished)"
         },
         "keywords": ["kill yourself", "not finished", "pas fini", "fini", "en cours", "in progress", "construction", "pas envie"]
+    },
+    {
+        "name": ":zap:",
+        "emoji": "⚡️",
+        "color": "#FFE6C9",
+        "descriptions": {
+            "fr": "Amélioration des performances",
+            "en": "Improve performance"
+        },
+        "keywords": ["performances", "improve", "optimisation"]
+    },
+    {
+        "name": ":recycle:",
+        "emoji": "♻️",
+        "color": "#C9FFDB",
+        "descriptions": {
+            "fr": "Refactorisation du code",
+            "en": "Refactoring of the code"
+        },
+        "keywords": ["code", "clean", "chore", "refactoring"]
+    },
+    {
+        "name": ":beers:",
+        "emoji": "🍻",
+        "color": "#FFE6C9",
+        "descriptions": {
+            "fr": "Code à chier et je le sais.",
+            "en": "Bad code and I know it."
+        },
+        "keywords": ["bad", "code", "drunk", "bourré", "mauvais", "trash", "chier"]
+    },
+    {
+        "name": ":truck:",
+        "emoji": "🚚",
+        "color": "#FFC9C9",
+        "descriptions": {
+            "fr": "Changement dans la hiérachie (Déplacer, changer le nom, etc...)",
+            "en": "Change in hierarchy (Move, change name, etc...)"
+        },
+        "keywords": ["move", "change", "name", "hierachy", "files", "folder"]
+    },
+    {
+        "name": ":rocket:",
+        "emoji": "🚀",
+        "color": "#C9EFFF",
+        "descriptions": {
+            "fr": "Déploiement vers la branche main",
+            "en": "Deploy to main branch"
+        },
+        "keywords": ["main", "branch", "deploy", "release", "versions"]
+    },
+    {
+        "name": ":wrench:",
+        "emoji": "🔧",
+        "color": "#EEC9FF",
+        "descriptions": {
+            "fr": "Mise à jour des fichiers de configuration",
+            "en": "Updating configuration files"
+        },
+        "keywords": ["update", "configuration", "files", "package", "manifest"]
+    },
+    {
+        "name": ":card_box:",
+        "emoji": "🗃️",
+        "color": "#C9FFDB",
+        "descriptions": {
+            "fr": "Mise à jour de la base de données",
+            "en": "Update Database"
+        },
+        "keywords": ["save", "database", "db", "update", "json"]
     }
 ]
