@@ -1,0 +1,21 @@
+header {
+    background-color: var(--main-color);
+    /* height: 380px; */
+    width: 100vw;
+    padding: 7em 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 96px;
+    margin: 0
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0
+}

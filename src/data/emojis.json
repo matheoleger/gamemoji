@@ -1,0 +1,56 @@
+[
+    {
+        "name": ":sparkles:",
+        "emoji": "✨️",
+        "descriptions": {
+            "fr": "Introduire une nouvelle fonctionnalité",
+            "en": "Introduce new feature"
+        },
+        "keywords": ["sparkles", "feature", "fonctionnalité", "start", "début"]
+    },
+    {
+        "name": ":bug:",
+        "emoji": "🐛",
+        "descriptions": {
+            "fr": "Régler un bug",
+            "en": "Fix a bug"
+        },
+        "keywords": ["bug", "fix", "régler", "bugfix", "hotfix"]
+    },
+    {
+        "name": ":twisted_rightwards_arrows:",
+        "emoji": "🔀",
+        "descriptions": {
+            "fr": "Faire un merge entre 2 branches",
+            "en": "Merge 2 branches"
+        },
+        "keywords": ["merge", "branches", "pull", "fetch"]
+    },
+    {
+        "name": ":hammer:",
+        "emoji": "🔨",
+        "descriptions": {
+            "fr": "Mettre à jour un script",
+            "en": "Update scripts"
+        },
+        "keywords": ["scripts", "continue", "continuer", "features", "fonctionnalité"]
+    },
+    {
+        "name": ":lipstick:",
+        "emoji": "💄",
+        "descriptions": {
+            "fr": "Mettre à jour l'UI, les modèles ou les animations",
+            "en": "Update UI/Models/Animations"
+        },
+        "keywords": ["hammer", "mettre à jour", "update", "models", "animations", "ui", "ux", "style"]
+    },
+    {
+        "name": ":construction:",
+        "emoji": "🚧",
+        "descriptions": {
+            "fr": "Encore en cours (pas fini)",
+            "en": "In progress (not finished)"
+        },
+        "keywords": ["kill yourself", "not finished", "pas fini", "fini", "en cours", "in progress", "construction", "pas envie"]
+    }
+]
