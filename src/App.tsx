@@ -11,22 +11,22 @@ function App() {
 
   const [filter, setFilter] = useState("");
   const [popupIsOpen, setPopupIsOpen] = useState(false);
-  const [popupText, setPopupText] = useState("");
+  const [copiedText, setCopiedText] = useState("");
 
 
   const copyHandler = (copiedText: string) => {
     setPopupIsOpen(true);
-
-    setPopupText(`${copiedText} is copied in your clipboard 😉️`);
-
-    sleep(3000).then(() => setPopupIsOpen(false));
+    setCopiedText(copiedText);
+    sleep(3000).then(() => setPopupIsOpen(false)); //change duration in the css
   }
 
   return (
     <div className="App">
       <Header/>
       <main>
-        <Popup text={popupText} isOpen={popupIsOpen}/>
+        <Popup isOpen={popupIsOpen}>
+          <code>{copiedText}</code><span> is copied in your clipboard 😉️</span>
+        </Popup>
         <SearchBar onFilter={setFilter}/>
         <Content filter={filter} copyHandler={copyHandler}/>
       </main>

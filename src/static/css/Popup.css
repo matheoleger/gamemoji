@@ -10,6 +10,7 @@ dialog {
     box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.42);
     opacity: 0;
     font-weight: 700;
+    z-index: 100;
 }
 
 dialog[open] {
@@ -30,4 +31,11 @@ dialog[open] {
       opacity:0;
     }
 }
-  
+
+dialog > code {
+    background-color: #ff7a7a;
+    color: var(--light-color);
+    padding: 0.2em;
+    border-radius: 4px;
+    font-size: 1em;
+}

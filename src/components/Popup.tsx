@@ -1,18 +1,17 @@
 import React from "react";
-
 import "../static/css/Popup.css";
 
 type Props = {
-    text: string
     isOpen: boolean
+    children: React.ReactNode
 }
 
 export const Popup = (props: Props) => {
-    const {text, isOpen} = props; 
+    const {children, isOpen} = props; 
 
     return (
         <dialog open={isOpen}>
-            {text}
+            {children}
         </dialog>
     )
 }
