@@ -6,6 +6,7 @@ import "../static/css/Content.css";
 
 type Props = {
   filter: string;
+  copyHandler: Function;
 };
 
 export const Content = (props: Props) => {
@@ -21,7 +22,7 @@ export const Content = (props: Props) => {
         || emoji.descriptions.en.toLowerCase().includes(filter) 
         || emoji.name.toLowerCase().includes(filter) 
         || !props.filter)
-          return <EmojiCard {...emoji} key={emoji.name} />;
+          return <EmojiCard key={emoji.name} emoji={emoji} copyHandler={props.copyHandler}/>;
       })}
     </section>
   );

@@ -2,7 +2,12 @@ import React from "react";
 
 import "../static/css/EmojiCard.css";
 
-export const EmojiCard = (props: Emoji) => {
+type Props = {
+  emoji: Emoji,
+  copyHandler: Function
+}
+
+export const EmojiCard = (props: Props) => {
   const copyToClipboard = async (e: any, value: string) => {   
     e.stopPropagation();
 
@@ -13,6 +18,7 @@ export const EmojiCard = (props: Emoji) => {
 
     try {
         await navigator.clipboard.writeText(value)
+        props.copyHandler(value);
     }
     catch(e) {
         console.error(e);
@@ -21,14 +27,14 @@ export const EmojiCard = (props: Emoji) => {
 
   return (
     <article
-      style={{ "--emojiColor": props.color } as any}
-      onClick={(e) => copyToClipboard(e, props.name)}
+      style={{ "--emojiColor": props.emoji.color } as any}
+      onClick={(e) => copyToClipboard(e, props.emoji.name)}
     >
       <h4>
-        <span onClick={(e) => copyToClipboard(e, props.emoji)}>{props.emoji}</span>
+        <span onClick={(e) => copyToClipboard(e, props.emoji.emoji)}>{props.emoji.emoji}</span>
       </h4>
-      <code>{props.name}</code>
-      <p>{props.descriptions.en}</p>
+      <code>{props.emoji.name}</code>
+      <p>{props.emoji.descriptions.en}</p>
     </article>
   );
 };
