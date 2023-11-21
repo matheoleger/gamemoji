@@ -12,6 +12,10 @@ article {
     cursor: pointer;
 }
 
+.dark-theme article {
+    background-color: var(--dark-secondary-color);
+}
+
 article:hover {
     box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.42);
 }
