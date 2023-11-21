@@ -9,6 +9,10 @@ footer {
     color: var(--light-color);
 }
 
+.dark-theme footer {
+    background-color: var(--dark-secondary-color);
+}
+
 .footer-content {
     display: flex;
     margin: 1em 0;
