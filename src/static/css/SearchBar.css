@@ -54,6 +54,10 @@ kbd {
         width: 100%;
     }
 
+    .searchbar-left-element {
+        width: 100%;
+    }
+
     .searchbar input {
         width: 100%;
     }

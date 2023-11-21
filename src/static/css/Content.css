@@ -1,12 +1,7 @@
 section {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 15px; */
     margin: 2em 0;
-    /* max-width: 1030px; */
     max-width: 1105px;
-
+    min-height: 60vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
