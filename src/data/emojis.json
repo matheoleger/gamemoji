@@ -44,10 +44,10 @@
         "emoji": "💄",
         "color": "#D0C9FF",
         "descriptions": {
-            "fr": "Mettre à jour l'UI, les modèles ou les animations",
-            "en": "Update UI, models or animations"
+            "fr": "Mettre à jour l'UI, le style etc...",
+            "en": "Update UI, styles etc..."
         },
-        "keywords": ["hammer", "mettre à jour", "update", "models", "animations", "ui", "ux", "style"]
+        "keywords": ["lipstick", "mettre à jour", "update", "styles", "ui", "ux"]
     },
     {
         "name": ":construction:",
@@ -128,5 +128,55 @@
             "en": "Update Database"
         },
         "keywords": ["save", "database", "db", "update", "json"]
+    },
+    {
+        "name": ":person_running:",
+        "emoji": "🏃",
+        "color": "#FFFCC9",
+        "descriptions": {
+            "fr": "Création ou mise à jour des modèles/animations",
+            "en": "Create or update Models/Animations"
+        },
+        "keywords": ["save", "database", "db", "update", "json"]
+    },
+    {
+        "name": ":map:",
+        "emoji": "🗺️",
+        "color": "#C9F0FF",
+        "descriptions": {
+            "fr": "Mise à jour ou création de la map",
+            "en": "Update or create map"
+        },
+        "keywords": ["map", "update", "create", "environment", "carte"]
+    },
+    {
+        "name": ":label:",
+        "emoji": "🏷️",
+        "color": "#FDFFC9",
+        "descriptions": {
+            "fr": "Sortie d'une nouvelle version ou build",
+            "en": "Release version/build"
+        },
+        "keywords": ["release", "save", "build", "version", "tag", "label"]
+    },
+    {
+        "name": ":broom:",
+        "emoji": "🧹",
+        "color": "#FFD8C9",
+        "descriptions": {
+            "fr": "Enlever du code/des fichiers ou nettoyer le code",
+            "en": "Remove code/files or Clean code"
+        },
+        "keywords": ["nettoyer", "broom", "clean", "delete", "remove", "throw", "code", "files"]
+    },
+    {
+        "name": ":pencil:",
+        "emoji": "📝",
+        "color": "#D0C9FF",
+        "descriptions": {
+            "fr": "Commenter/Documenter",
+            "en": "Documentation/Comments"
+        },
+        "keywords": ["comment", "commentaire", "documenter", "docs", "documentation"]
     }
 ]
