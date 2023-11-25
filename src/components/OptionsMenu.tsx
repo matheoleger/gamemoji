@@ -12,22 +12,13 @@ type Props = {
 
 export const OptionsMenu = (props: Props) => {
 
-    const { open, onClose, headerColor, setHeaderColor } = props;
-
-    // const [headerColor, setHeaderColor] = useState(localStorage.getItem('HEADER_COLOR'));
-
-    // const handleHeaderColor = (e: any) => {
-    //     console.log(e.target.value);
-    //     localStorage.setItem('HEADER_COLOR', e.target.value);
-    //     setHeaderColor(e.target.value);
-    // }
+    const { open, headerColor, setHeaderColor } = props;
 
     const handleHeaderColor = (color: string) => {
         console.log(color);
         localStorage.setItem('HEADER_COLOR', color);
         setHeaderColor(color);
     }
-
 
     return (
         <div className={`options-menu options-menu-${open ? "open" : "close"}`}>
