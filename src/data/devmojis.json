@@ -130,26 +130,6 @@
         "keywords": ["save", "database", "db", "update", "json"]
     },
     {
-        "name": ":person_running:",
-        "emoji": "🏃",
-        "color": "#FFFCC9",
-        "descriptions": {
-            "fr": "Création ou mise à jour des modèles/animations",
-            "en": "Create or update Models/Animations"
-        },
-        "keywords": ["save", "database", "db", "update", "json"]
-    },
-    {
-        "name": ":map:",
-        "emoji": "🗺️",
-        "color": "#C9F0FF",
-        "descriptions": {
-            "fr": "Mise à jour ou création de la map",
-            "en": "Update or create map"
-        },
-        "keywords": ["map", "update", "create", "environment", "carte"]
-    },
-    {
         "name": ":label:",
         "emoji": "🏷️",
         "color": "#FDFFC9",
@@ -172,11 +152,21 @@
     {
         "name": ":pencil:",
         "emoji": "📝",
-        "color": "#D0C9FF",
+        "color": "#C9EFFF",
         "descriptions": {
             "fr": "Commenter/Documenter",
             "en": "Documentation/Comments"
         },
         "keywords": ["comment", "commentaire", "documenter", "docs", "documentation"]
+    },
+    {
+        "name": ":shield:",
+        "emoji": "🛡",
+        "color": "#D0C9FF",
+        "descriptions": {
+            "fr": "Mise à jour pour la sécurité",
+            "en": "Update for security"
+        },
+        "keywords": ["security", "update", "securité", "sécurité", "securite", "protection", "rgpd"]
     }
 ]

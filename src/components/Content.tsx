@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { default as gamemojis } from "../data/gamemojis.json";
+import { default as devmojis } from "../data/devmojis.json";
 import { EmojiCard } from "./EmojiCard";
 
 import "../static/css/Content.css";
@@ -12,32 +13,11 @@ type Props = {
 };
 
 export const Content = (props: Props) => {
-
+  const {emojiMode} = useContext(StoreContext);
   const [emojis, setEmojis] = useState<Emoji[]>([])
-  // const [emojiMode, setEmojiMode] = useLocalStorage("EMOJI_MODE");
-  const {emojiMode, setEmojiMode} = useContext(StoreContext);
-
-  // useEffect(() => {
-  //   window.addEventListener('storage', storageHandler)
-
-  //   return () => {
-  //     window.removeEventListener('storage', storageHandler)
-  //   }
-  // }, [])
-
-  // // window.addEventListener("storage", (event) => {
-  // //   console.log("STORAGE EVENT")
-
-  // // });
-
-  // const storageHandler = () => {
-  //   console.log("STORAGE EVENT")
-  //   const emojiMode = localStorage.getItem("EMOJI_MODE");
-  //   console.log(emojiMode);
-  // }
 
   useEffect(() => {
-    console.log("Emoji Mode", emojiMode)
+    setEmojis(emojiMode == EmojiMode.Gamemoji ? gamemojis : devmojis)
   },[emojiMode])
 
   return (

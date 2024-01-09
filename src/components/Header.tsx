@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../static/css/Header.css";
 
-import { default as emojis } from "../data/gamemojis.json";
+import { default as gamemojis } from "../data/gamemojis.json";
+import { default as devmojis } from "../data/devmojis.json";
+import { StoreContext } from "../utils/useLocalStorage";
+import { EmojiMode } from "../types";
 
 type Props = {
   backgroundColor: string;
@@ -10,13 +13,22 @@ type Props = {
 export const Header = (props: Props) => {
   const { backgroundColor } = props;
 
-  const [textColor, setTextColor] = useState("var(--dark-color)");
+  const {emojiMode} = useContext(StoreContext);
 
-  const emojiRandomNumber = Math.floor(Math.random() * emojis.length);
+  const [textColor, setTextColor] = useState("var(--dark-color)");
+  const [emojis, setEmojis] = useState<Emoji[]>(emojiMode == EmojiMode.Gamemoji ? gamemojis : devmojis)
+
+  const [emojiRandomNumber, setEmojiRandomNumber] = useState(Math.floor(Math.random() * emojis.length));
 
   useEffect(() => {
     setTextColor(getIsDarkColor() ? "var(--dark-color)" : "var(--light-color)");
   }, [backgroundColor]);
+
+  useEffect(() => {
+    const newEmojisList = emojiMode == EmojiMode.Gamemoji ? gamemojis : devmojis
+    setEmojis(newEmojisList)
+    setEmojiRandomNumber(Math.floor(Math.random() * newEmojisList.length))
+  },[emojiMode])
 
   const getIsDarkColor = () => {
     // https://stackoverflow.com/questions/3942878/how-to-decide-font-color-in-white-or-black-depending-on-background-color
@@ -42,8 +54,8 @@ export const Header = (props: Props) => {
 
   return (
     <header style={{ backgroundColor, color: textColor }}>
-      <h1>{emojis[emojiRandomNumber].emoji}Gamemoji</h1>
-      <h2>An emoji guide for your gamedev commit.</h2>
+      <h1>{emojis[emojiRandomNumber].emoji}{emojiMode == EmojiMode.Gamemoji ? "Gamemoji" : "Devmoji"}</h1>
+      <h2>An emoji guide for your {emojiMode == EmojiMode.Gamemoji && "gamedev"} commit.</h2>
     </header>
   );
 };
