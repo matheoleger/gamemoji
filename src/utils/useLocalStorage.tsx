@@ -34,9 +34,15 @@ export const useLocalStorage = (key: string, initialValue?: string) => {
 };
 
 export const useStore = () => {
-  const [emojiMode, setEmojiMode] = useLocalStorage("EMOJI_MODE", EmojiMode.Gamemoji)
-  const [theme, setTheme] = useLocalStorage("THEME", "light-theme")
-  const [headerColor, setHeaderColor] = useLocalStorage("HEADER_COLOR", "#FFA3F6");
+  const [emojiMode, setEmojiMode] = useLocalStorage(
+    "EMOJI_MODE",
+    EmojiMode.Gamemoji
+  );
+  const [theme, setTheme] = useLocalStorage("THEME", "light-theme");
+  const [headerColor, setHeaderColor] = useLocalStorage(
+    "HEADER_COLOR",
+    "#FFA3F6"
+  );
 
   return {
     emojiMode,
@@ -45,8 +51,8 @@ export const useStore = () => {
     setTheme,
     headerColor,
     setHeaderColor,
-  }
-}
+  };
+};
 
 export const StoreContext = createContext<ReturnType<typeof useStore>>({
   emojiMode: "",
@@ -55,5 +61,4 @@ export const StoreContext = createContext<ReturnType<typeof useStore>>({
   setTheme: () => {},
   headerColor: "",
   setHeaderColor: () => {},
-})
-
+});

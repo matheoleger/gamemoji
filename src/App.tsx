@@ -28,47 +28,34 @@ function App() {
   );
 
   const [isOptionsMenuOpen, setIsOptionsMenuOpen] = useState(false);
-  const [headerColor, setHeaderColor] = useState(localStorage.getItem("HEADER_COLOR") ?? "#FFA3F6");
+  const [headerColor, setHeaderColor] = useState(
+    localStorage.getItem("HEADER_COLOR") ?? "#FFA3F6"
+  );
 
   const changeTheme = (newThemeValue: string) => {
     setTheme(newThemeValue);
     localStorage.setItem("THEME", newThemeValue);
   };
 
-  useEffect(() => {
-    window.addEventListener('storage', storageHandler)
-
-    return () => {
-      window.removeEventListener('storage', storageHandler)
-    }
-  }, [])
-
-  // window.addEventListener("storage", (event) => {
-  //   console.log("STORAGE EVENT")
-
-  // });
-
-  const storageHandler = () => {
-    console.log("STORAGE EVENT")
-    const emojiMode = localStorage.getItem("EMOJI_MODE");
-    console.log(emojiMode);
-  }
-
   const storeContext = useStore();
-
 
   return (
     <div className={`App ${theme}`}>
       <StoreContext.Provider value={storeContext}>
-        <Header backgroundColor={headerColor}/>
-        <div
-          style={buttonsContainerStyle}
-        >
-          <SwitchEmojiButton/>
+        <Header backgroundColor={headerColor} />
+        <div style={buttonsContainerStyle}>
+          <SwitchEmojiButton />
           <ChangeThemeButton theme={theme} changeTheme={changeTheme} />
-          <OptionsButton isOpen={isOptionsMenuOpen} setIsOpen={setIsOptionsMenuOpen} />
+          <OptionsButton
+            isOpen={isOptionsMenuOpen}
+            setIsOpen={setIsOptionsMenuOpen}
+          />
         </div>
-        <OptionsMenu open={isOptionsMenuOpen} headerColor={headerColor} setHeaderColor={setHeaderColor}/>
+        <OptionsMenu
+          open={isOptionsMenuOpen}
+          headerColor={headerColor}
+          setHeaderColor={setHeaderColor}
+        />
         <main>
           <Popup isOpen={popupIsOpen}>
             <code>{copiedText}</code>
@@ -89,7 +76,7 @@ const buttonsContainerStyle: CSSProperties = {
   position: "absolute",
   top: "20px",
   right: "20px",
-  width: "180px"
+  width: "180px",
 };
 
 export default App;

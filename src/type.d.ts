@@ -8,8 +8,3 @@ type Emoji = {
     },
     keywords: string[]
 }
-
-// enum EmojiMode {
-//     Gamemoji = "GAMEMOJI",
-//     Devmoji = "DEVMOJI"
-// }
