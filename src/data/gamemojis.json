@@ -120,7 +120,7 @@
         "keywords": ["update", "configuration", "files", "package", "manifest"]
     },
     {
-        "name": ":card_box:",
+        "name": ":card_file_box:",
         "emoji": "🗃️",
         "color": "#C9FFDB",
         "descriptions": {
