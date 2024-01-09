@@ -9,6 +9,8 @@ import { sleep } from "./utils";
 import { ChangeThemeButton } from "./components/ChangeThemeButton";
 import { OptionsButton } from "./components/OptionsButton";
 import { OptionsMenu } from "./components/OptionsMenu";
+import { SwitchEmojiButton } from "./components/SwitchEmojiButton";
+import { StoreContext, useStore } from "./utils/useLocalStorage";
 
 function App() {
   const [filter, setFilter] = useState("");
@@ -33,25 +35,50 @@ function App() {
     localStorage.setItem("THEME", newThemeValue);
   };
 
+  useEffect(() => {
+    window.addEventListener('storage', storageHandler)
+
+    return () => {
+      window.removeEventListener('storage', storageHandler)
+    }
+  }, [])
+
+  // window.addEventListener("storage", (event) => {
+  //   console.log("STORAGE EVENT")
+
+  // });
+
+  const storageHandler = () => {
+    console.log("STORAGE EVENT")
+    const emojiMode = localStorage.getItem("EMOJI_MODE");
+    console.log(emojiMode);
+  }
+
+  const storeContext = useStore();
+
+
   return (
     <div className={`App ${theme}`}>
-      <Header backgroundColor={headerColor}/>
-      <div
-        style={buttonsContainerStyle}
-      >
-        <ChangeThemeButton theme={theme} changeTheme={changeTheme} />
-        <OptionsButton isOpen={isOptionsMenuOpen} setIsOpen={setIsOptionsMenuOpen} />
-      </div>
-      <OptionsMenu open={isOptionsMenuOpen} headerColor={headerColor} setHeaderColor={setHeaderColor}/>
-      <main>
-        <Popup isOpen={popupIsOpen}>
-          <code>{copiedText}</code>
-          <span> is copied in your clipboard 😉️</span>
-        </Popup>
-        <SearchBar onFilter={setFilter} />
-        <Content filter={filter} copyHandler={copyHandler} />
-      </main>
-      <Footer />
+      <StoreContext.Provider value={storeContext}>
+        <Header backgroundColor={headerColor}/>
+        <div
+          style={buttonsContainerStyle}
+        >
+          <SwitchEmojiButton/>
+          <ChangeThemeButton theme={theme} changeTheme={changeTheme} />
+          <OptionsButton isOpen={isOptionsMenuOpen} setIsOpen={setIsOptionsMenuOpen} />
+        </div>
+        <OptionsMenu open={isOptionsMenuOpen} headerColor={headerColor} setHeaderColor={setHeaderColor}/>
+        <main>
+          <Popup isOpen={popupIsOpen}>
+            <code>{copiedText}</code>
+            <span> is copied in your clipboard 😉️</span>
+          </Popup>
+          <SearchBar onFilter={setFilter} />
+          <Content filter={filter} copyHandler={copyHandler} />
+        </main>
+        <Footer />
+      </StoreContext.Provider>
     </div>
   );
 }
@@ -62,7 +89,7 @@ const buttonsContainerStyle: CSSProperties = {
   position: "absolute",
   top: "20px",
   right: "20px",
-  width: "110px"
+  width: "180px"
 };
 
 export default App;

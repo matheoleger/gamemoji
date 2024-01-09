@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../static/css/Header.css";
 
-import { default as emojis } from "../data/emojis.json";
+import { default as emojis } from "../data/gamemojis.json";
 
 type Props = {
   backgroundColor: string;
