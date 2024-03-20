@@ -80,14 +80,24 @@
         "keywords": ["code", "clean", "chore", "refactoring"]
     },
     {
-        "name": ":beers:",
-        "emoji": "🍻",
-        "color": "#FFE6C9",
+        "name": ":jigsaw:",
+        "emoji": "🧩",
+        "color": "#C9FFDB",
         "descriptions": {
-            "fr": "Code à chier et je le sais.",
-            "en": "Bad code and I know it."
+            "fr": "Création de Prefab ou de Scène",
+            "en": "Creating Prefab or Scene"
         },
-        "keywords": ["bad", "code", "drunk", "bourré", "mauvais", "trash", "chier"]
+        "keywords": ["prefab", "scene", "prefabs", "scenes"]
+    },
+    {
+        "name": ":package:",
+        "emoji": "📦",
+        "color": "#C9FFDB",
+        "descriptions": {
+            "fr": "Modification des Packages sur le projet",
+            "en": "Packages modification"
+        },
+        "keywords": ["package", "tools", "repository"]
     },
     {
         "name": ":truck:",
@@ -130,7 +140,7 @@
         "keywords": ["save", "database", "db", "update", "json"]
     },
     {
-        "name": ":person_running:",
+        "name": ":runner:",
         "emoji": "🏃",
         "color": "#FFFCC9",
         "descriptions": {
@@ -140,7 +150,7 @@
         "keywords": ["save", "database", "db", "update", "json"]
     },
     {
-        "name": ":map:",
+        "name": ":world_map:",
         "emoji": "🗺️",
         "color": "#C9F0FF",
         "descriptions": {
@@ -170,7 +180,7 @@
         "keywords": ["nettoyer", "broom", "clean", "delete", "remove", "throw", "code", "files"]
     },
     {
-        "name": ":pencil:",
+        "name": ":memo:",
         "emoji": "📝",
         "color": "#D0C9FF",
         "descriptions": {
@@ -178,5 +188,15 @@
             "en": "Documentation/Comments"
         },
         "keywords": ["comment", "commentaire", "documenter", "docs", "documentation"]
+    },
+    {
+        "name": ":beers:",
+        "emoji": "🍻",
+        "color": "#FFE6C9",
+        "descriptions": {
+            "fr": "Code à chier et je le sais.",
+            "en": "Bad code and I know it."
+        },
+        "keywords": ["bad", "code", "drunk", "bourré", "mauvais", "trash", "chier"]
     }
 ]

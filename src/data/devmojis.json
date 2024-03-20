@@ -80,16 +80,6 @@
         "keywords": ["code", "clean", "chore", "refactoring"]
     },
     {
-        "name": ":beers:",
-        "emoji": "🍻",
-        "color": "#FFE6C9",
-        "descriptions": {
-            "fr": "Code à chier et je le sais.",
-            "en": "Bad code and I know it."
-        },
-        "keywords": ["bad", "code", "drunk", "bourré", "mauvais", "trash", "chier"]
-    },
-    {
         "name": ":truck:",
         "emoji": "🚚",
         "color": "#FFC9C9",
@@ -150,7 +140,7 @@
         "keywords": ["nettoyer", "broom", "clean", "delete", "remove", "throw", "code", "files"]
     },
     {
-        "name": ":pencil:",
+        "name": ":memo:",
         "emoji": "📝",
         "color": "#C9EFFF",
         "descriptions": {
@@ -168,5 +158,15 @@
             "en": "Update for security"
         },
         "keywords": ["security", "update", "securité", "sécurité", "securite", "protection", "rgpd"]
+    },
+    {
+        "name": ":beers:",
+        "emoji": "🍻",
+        "color": "#FFE6C9",
+        "descriptions": {
+            "fr": "Code à chier et je le sais.",
+            "en": "Bad code and I know it."
+        },
+        "keywords": ["bad", "code", "drunk", "bourré", "mauvais", "trash", "chier"]
     }
 ]
